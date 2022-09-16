@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282c34;
+  color: white;
+  padding: 5px;
+}
+.nav_container{
+  display: flex;
+  align-items: center;
+}
+.nav_item{
+  margin-left: 25px;
+
+}
+.nav_link{
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+
+}
+section{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex>* img{
+  width: 500px;
+  border-radius: 10px;
+}
+.flex>* h2{
+ font-size: 4rem;
+ font-weight: 600;
+  line-height: 1.5;
+ 
+}
+.flex>*.col-6{
+  flex: 1;
+}
+.flex>*.col-6:nth-of-type(2){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex>* p{
+  font-size: 1.2rem;
+  font-weight: 500;
+   line-height: 1.5;
+  
+ }
+img{
+  max-width: 100%;
+}
+@media screen and (max-width:700px){
+  .flex>*.col-6{
+    flex-basis: 100%;
+  }
+}
+.container{
+  padding: 4rem 0;
+}
+.flex-column{
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.flex ul li{
+  text-align: justify;
+}
+footer{
+  background-color: #282c34;
+  color: white;
+  font-weight: 18px;
+  font-weight: 500;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5px;
+}
+input,textarea {
+  width: 100%;
+  padding: 1rem 8px;
+  border-radius: 10px;
+  border: 2px solid #282c34;
+  cursor: pointer;
+}
+.col-6>* div{
+  margin-bottom: 1rem;
+}
+button{
+  background-color: #282c34;
+  color: white;
+  padding: 1rem 34px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 9px;
+  cursor: pointer;
+}
